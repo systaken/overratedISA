@@ -126,8 +126,8 @@ namespace TimeKeepingApp
                 // Set the SMS properties from the advanced dialog            
                 objSms.BodyFormat = objConstants.BODYFORMAT_TEXT;
 
-                objSms.ToAddressTON = objConstants.TON_NATIONAL;
-                objSms.ToAddressNPI = objConstants.NPI_UNKNOWN;
+                objSms.ToAddressTON = 0;
+                objSms.ToAddressNPI = 0;
                 objSms.RequestDeliveryReport = false;
                 objSms.HasUdh = false;
 

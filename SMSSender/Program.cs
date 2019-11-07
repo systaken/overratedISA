@@ -15,7 +15,7 @@ namespace SMSSender
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1("COM3"));
+            Application.Run(new Form1());
         }
     }
 }
