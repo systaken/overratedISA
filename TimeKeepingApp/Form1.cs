@@ -113,8 +113,9 @@ namespace TimeKeepingApp
 
                 Cursor.Current = Cursors.WaitCursor;
                 int subsno = objConstants.TON_NATIONAL;
+                string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
                 string comm = "COM3";
-                objGsm.Open(comm.ToString(), "",  brate);
+                objGsm.Open(COMMPORT.ToString(), "",  brate);
              
                 // Create a new SMS message and configure it for sending.
                 AxSms.Message objSms = new AxSms.Message();
