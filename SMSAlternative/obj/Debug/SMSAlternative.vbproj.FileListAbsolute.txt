@@ -1,0 +1,12 @@
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.exe.config
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.exe
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.pdb
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.xml
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbprojAssemblyReference.cache
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.Form1.resources
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.Resources.resources
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbproj.GenerateResource.cache
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbproj.CoreCompileInputs.cache
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.exe
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.xml
+E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.pdb
