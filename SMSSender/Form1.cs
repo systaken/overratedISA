@@ -188,13 +188,13 @@ namespace SMSSender
             // the AxSms.Gsm component will enter the PIN and do some basic initialization. By
             // default the component will wait until the GSM device is registered on a GSM network.      
 
-
+            string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
             string conRate = ConfigurationManager.AppSettings["cFrequency"];
             int brate = fr.BaudRate(conRate);
-
+            
             string sDevice = txtIP.Text.Contains(":") ? "[" + txtIP.Text + "]" : txtIP.Text;
             sDevice += txtPort.Text;
-            string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
+          
 
             MessageBox.Show(COMMPORT + "," + brate);
             objGsm.Open(COMMPORT, txtPincode.Text, brate);
@@ -250,6 +250,11 @@ namespace SMSSender
             // re-initialization may be necessary if the device could have been disconnected or
             // powercycled (e.g. maybe the device was hot-swapped or the SIM was swapped).
             objGsm.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -73,38 +73,34 @@
             // 
             // ctlListGsmModems
             // 
-            this.ctlListGsmModems.Location = new System.Drawing.Point(376, 25);
-            this.ctlListGsmModems.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ctlListGsmModems.Location = new System.Drawing.Point(282, 20);
             this.ctlListGsmModems.Name = "ctlListGsmModems";
-            this.ctlListGsmModems.Size = new System.Drawing.Size(75, 15);
+            this.ctlListGsmModems.Size = new System.Drawing.Size(56, 12);
             this.ctlListGsmModems.TabIndex = 8;
             this.ctlListGsmModems.TabStop = true;
             this.ctlListGsmModems.Text = "click here";
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(21, 196);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(16, 159);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(75, 20);
+            this.label10.Size = new System.Drawing.Size(56, 16);
             this.label10.TabIndex = 3;
             this.label10.Text = "&Received:";
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(21, 28);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(16, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(75, 20);
+            this.label8.Size = new System.Drawing.Size(56, 16);
             this.label8.TabIndex = 0;
             this.label8.Text = "Se&nt:";
             // 
             // btnReceive
             // 
-            this.btnReceive.Location = new System.Drawing.Point(107, 154);
-            this.btnReceive.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReceive.Location = new System.Drawing.Point(80, 125);
             this.btnReceive.Name = "btnReceive";
-            this.btnReceive.Size = new System.Drawing.Size(539, 30);
+            this.btnReceive.Size = new System.Drawing.Size(404, 24);
             this.btnReceive.TabIndex = 2;
             this.btnReceive.Text = "Re&ceive SMS / Delivery Reports";
             // 
@@ -115,68 +111,60 @@
             this.GroupBox5.Controls.Add(this.txtResult);
             this.GroupBox5.Controls.Add(this.txtLogFile);
             this.GroupBox5.Controls.Add(this.Label6);
-            this.GroupBox5.Location = new System.Drawing.Point(25, 690);
-            this.GroupBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox5.Location = new System.Drawing.Point(19, 561);
             this.GroupBox5.Name = "GroupBox5";
-            this.GroupBox5.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox5.Size = new System.Drawing.Size(779, 87);
+            this.GroupBox5.Size = new System.Drawing.Size(584, 71);
             this.GroupBox5.TabIndex = 12;
             this.GroupBox5.TabStop = false;
             this.GroupBox5.Text = "Result && Logging";
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(653, 53);
-            this.btnView.Margin = new System.Windows.Forms.Padding(4);
+            this.btnView.Location = new System.Drawing.Point(490, 43);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(103, 28);
+            this.btnView.Size = new System.Drawing.Size(77, 23);
             this.btnView.TabIndex = 4;
             this.btnView.Text = "&View...";
             // 
             // Label3
             // 
-            this.Label3.Location = new System.Drawing.Point(21, 58);
-            this.Label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label3.Location = new System.Drawing.Point(16, 47);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(69, 20);
+            this.Label3.Size = new System.Drawing.Size(52, 16);
             this.Label3.TabIndex = 2;
             this.Label3.Text = "Lo&g file:";
             // 
             // txtResult
             // 
             this.txtResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResult.Location = new System.Drawing.Point(107, 23);
-            this.txtResult.Margin = new System.Windows.Forms.Padding(4);
+            this.txtResult.Location = new System.Drawing.Point(80, 19);
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(648, 23);
+            this.txtResult.Size = new System.Drawing.Size(487, 20);
             this.txtResult.TabIndex = 1;
             // 
             // txtLogFile
             // 
-            this.txtLogFile.Location = new System.Drawing.Point(107, 53);
-            this.txtLogFile.Margin = new System.Windows.Forms.Padding(4);
+            this.txtLogFile.Location = new System.Drawing.Point(80, 43);
             this.txtLogFile.Name = "txtLogFile";
-            this.txtLogFile.Size = new System.Drawing.Size(537, 22);
+            this.txtLogFile.Size = new System.Drawing.Size(404, 20);
             this.txtLogFile.TabIndex = 3;
             // 
             // Label6
             // 
             this.Label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label6.Location = new System.Drawing.Point(21, 28);
-            this.Label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label6.Location = new System.Drawing.Point(16, 23);
             this.Label6.Name = "Label6";
-            this.Label6.Size = new System.Drawing.Size(64, 20);
+            this.Label6.Size = new System.Drawing.Size(48, 16);
             this.Label6.TabIndex = 0;
             this.Label6.Text = "Res&ult:";
             // 
             // lvReceivedMessages
             // 
             this.lvReceivedMessages.HideSelection = false;
-            this.lvReceivedMessages.Location = new System.Drawing.Point(107, 191);
-            this.lvReceivedMessages.Margin = new System.Windows.Forms.Padding(4);
+            this.lvReceivedMessages.Location = new System.Drawing.Point(80, 155);
             this.lvReceivedMessages.Name = "lvReceivedMessages";
-            this.lvReceivedMessages.Size = new System.Drawing.Size(537, 122);
+            this.lvReceivedMessages.Size = new System.Drawing.Size(404, 100);
             this.lvReceivedMessages.TabIndex = 4;
             this.lvReceivedMessages.UseCompatibleStateImageBehavior = false;
             this.lvReceivedMessages.View = System.Windows.Forms.View.Details;
@@ -184,10 +172,9 @@
             // lvSentMessages
             // 
             this.lvSentMessages.HideSelection = false;
-            this.lvSentMessages.Location = new System.Drawing.Point(107, 23);
-            this.lvSentMessages.Margin = new System.Windows.Forms.Padding(4);
+            this.lvSentMessages.Location = new System.Drawing.Point(80, 19);
             this.lvSentMessages.Name = "lvSentMessages";
-            this.lvSentMessages.Size = new System.Drawing.Size(537, 122);
+            this.lvSentMessages.Size = new System.Drawing.Size(404, 100);
             this.lvSentMessages.TabIndex = 1;
             this.lvSentMessages.UseCompatibleStateImageBehavior = false;
             this.lvSentMessages.View = System.Windows.Forms.View.Details;
@@ -196,103 +183,92 @@
             // 
             this.cbxDataCoding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDataCoding.FormattingEnabled = true;
-            this.cbxDataCoding.Location = new System.Drawing.Point(428, 22);
-            this.cbxDataCoding.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxDataCoding.Location = new System.Drawing.Point(321, 18);
             this.cbxDataCoding.Name = "cbxDataCoding";
-            this.cbxDataCoding.Size = new System.Drawing.Size(216, 24);
+            this.cbxDataCoding.Size = new System.Drawing.Size(163, 21);
             this.cbxDataCoding.TabIndex = 3;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(329, 28);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(247, 23);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 17);
+            this.label11.Size = new System.Drawing.Size(69, 13);
             this.label11.TabIndex = 2;
             this.label11.Text = "Data Coding:";
             // 
             // llblUrlRecipientFormat
             // 
-            this.llblUrlRecipientFormat.Location = new System.Drawing.Point(653, 28);
-            this.llblUrlRecipientFormat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.llblUrlRecipientFormat.Location = new System.Drawing.Point(490, 23);
             this.llblUrlRecipientFormat.Name = "llblUrlRecipientFormat";
-            this.llblUrlRecipientFormat.Size = new System.Drawing.Size(117, 20);
+            this.llblUrlRecipientFormat.Size = new System.Drawing.Size(88, 16);
             this.llblUrlRecipientFormat.TabIndex = 4;
             this.llblUrlRecipientFormat.TabStop = true;
             this.llblUrlRecipientFormat.Text = "Number format";
             // 
             // btnSendOptions
             // 
-            this.btnSendOptions.Location = new System.Drawing.Point(653, 113);
-            this.btnSendOptions.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSendOptions.Location = new System.Drawing.Point(490, 92);
             this.btnSendOptions.Name = "btnSendOptions";
-            this.btnSendOptions.Size = new System.Drawing.Size(103, 30);
+            this.btnSendOptions.Size = new System.Drawing.Size(77, 24);
             this.btnSendOptions.TabIndex = 7;
             this.btnSendOptions.Text = "&Advanced...";
             // 
             // Label5
             // 
-            this.Label5.Location = new System.Drawing.Point(21, 59);
-            this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label5.Location = new System.Drawing.Point(16, 48);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(75, 20);
+            this.Label5.Size = new System.Drawing.Size(56, 16);
             this.Label5.TabIndex = 5;
             this.Label5.Text = "&Body:";
             // 
             // Label4
             // 
-            this.Label4.Location = new System.Drawing.Point(21, 28);
-            this.Label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label4.Location = new System.Drawing.Point(16, 23);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(85, 20);
+            this.Label4.Size = new System.Drawing.Size(64, 16);
             this.Label4.TabIndex = 0;
             this.Label4.Text = "&ToAddress:";
             // 
             // txtToAddress
             // 
             this.txtToAddress.AcceptsReturn = true;
-            this.txtToAddress.Location = new System.Drawing.Point(107, 22);
-            this.txtToAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtToAddress.Location = new System.Drawing.Point(80, 18);
             this.txtToAddress.Name = "txtToAddress";
-            this.txtToAddress.Size = new System.Drawing.Size(216, 22);
+            this.txtToAddress.Size = new System.Drawing.Size(163, 20);
             this.txtToAddress.TabIndex = 1;
             // 
             // txtBody
             // 
-            this.txtBody.Location = new System.Drawing.Point(107, 55);
-            this.txtBody.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBody.Location = new System.Drawing.Point(80, 45);
             this.txtBody.Multiline = true;
             this.txtBody.Name = "txtBody";
-            this.txtBody.Size = new System.Drawing.Size(537, 86);
+            this.txtBody.Size = new System.Drawing.Size(404, 71);
             this.txtBody.TabIndex = 6;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(107, 150);
-            this.btnSend.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSend.Location = new System.Drawing.Point(80, 122);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(539, 30);
+            this.btnSend.Size = new System.Drawing.Size(404, 24);
             this.btnSend.TabIndex = 8;
             this.btnSend.Text = "S&end";
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click_1);
             // 
             // btnReceiveOptions
             // 
-            this.btnReceiveOptions.Location = new System.Drawing.Point(653, 284);
-            this.btnReceiveOptions.Margin = new System.Windows.Forms.Padding(4);
+            this.btnReceiveOptions.Location = new System.Drawing.Point(490, 231);
             this.btnReceiveOptions.Name = "btnReceiveOptions";
-            this.btnReceiveOptions.Size = new System.Drawing.Size(103, 30);
+            this.btnReceiveOptions.Size = new System.Drawing.Size(77, 24);
             this.btnReceiveOptions.TabIndex = 5;
             this.btnReceiveOptions.Text = "A&dvanced...";
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
-            this.lblInfo.Location = new System.Drawing.Point(21, 784);
-            this.lblInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInfo.Location = new System.Drawing.Point(16, 637);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(39, 17);
+            this.lblInfo.Size = new System.Drawing.Size(31, 13);
             this.lblInfo.TabIndex = 13;
             this.lblInfo.Text = "[Info]";
             // 
@@ -304,11 +280,9 @@
             this.groupBox6.Controls.Add(this.btnReceive);
             this.groupBox6.Controls.Add(this.lvReceivedMessages);
             this.groupBox6.Controls.Add(this.lvSentMessages);
-            this.groupBox6.Location = new System.Drawing.Point(25, 359);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Location = new System.Drawing.Point(19, 292);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(779, 324);
+            this.groupBox6.Size = new System.Drawing.Size(584, 263);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Messages";
@@ -325,112 +299,99 @@
             this.GroupBox1.Controls.Add(this.Label2);
             this.GroupBox1.Controls.Add(this.cbxDevices);
             this.GroupBox1.Controls.Add(this.Label1);
-            this.GroupBox1.Location = new System.Drawing.Point(25, 47);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox1.Location = new System.Drawing.Point(19, 38);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox1.Size = new System.Drawing.Size(771, 94);
+            this.GroupBox1.Size = new System.Drawing.Size(578, 76);
             this.GroupBox1.TabIndex = 9;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "GSM Modem/Phone Connection Properties";
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(428, 58);
-            this.txtPort.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPort.Location = new System.Drawing.Point(321, 47);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(115, 22);
+            this.txtPort.Size = new System.Drawing.Size(87, 20);
             this.txtPort.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(332, 62);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(249, 50);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 17);
+            this.label13.Size = new System.Drawing.Size(29, 13);
             this.label13.TabIndex = 8;
             this.label13.Text = "Port:";
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(21, 62);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(16, 50);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 20);
+            this.label12.Size = new System.Drawing.Size(56, 16);
             this.label12.TabIndex = 6;
             this.label12.Text = "IP/Host:";
             // 
             // txtIP
             // 
-            this.txtIP.Location = new System.Drawing.Point(107, 58);
-            this.txtIP.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIP.Location = new System.Drawing.Point(80, 47);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(216, 22);
+            this.txtIP.Size = new System.Drawing.Size(163, 20);
             this.txtIP.TabIndex = 7;
             // 
             // txtPincode
             // 
-            this.txtPincode.Location = new System.Drawing.Point(653, 25);
-            this.txtPincode.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPincode.Location = new System.Drawing.Point(490, 20);
             this.txtPincode.Name = "txtPincode";
             this.txtPincode.PasswordChar = '*';
-            this.txtPincode.Size = new System.Drawing.Size(101, 22);
+            this.txtPincode.Size = new System.Drawing.Size(77, 20);
             this.txtPincode.TabIndex = 5;
             // 
             // cbxDeviceSpeed
             // 
             this.cbxDeviceSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxDeviceSpeed.Location = new System.Drawing.Point(428, 23);
-            this.cbxDeviceSpeed.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxDeviceSpeed.Location = new System.Drawing.Point(321, 19);
             this.cbxDeviceSpeed.Name = "cbxDeviceSpeed";
-            this.cbxDeviceSpeed.Size = new System.Drawing.Size(115, 24);
+            this.cbxDeviceSpeed.Size = new System.Drawing.Size(87, 21);
             this.cbxDeviceSpeed.TabIndex = 3;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(580, 31);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(435, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 17);
+            this.label9.Size = new System.Drawing.Size(49, 13);
             this.label9.TabIndex = 4;
             this.label9.Text = "Pin&code:";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(332, 27);
-            this.Label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label2.Location = new System.Drawing.Point(249, 22);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(53, 17);
+            this.Label2.Size = new System.Drawing.Size(41, 13);
             this.Label2.TabIndex = 2;
             this.Label2.Text = "&Speed:";
             // 
             // cbxDevices
             // 
             this.cbxDevices.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxDevices.Location = new System.Drawing.Point(107, 23);
-            this.cbxDevices.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxDevices.Location = new System.Drawing.Point(80, 19);
             this.cbxDevices.Name = "cbxDevices";
-            this.cbxDevices.Size = new System.Drawing.Size(216, 24);
+            this.cbxDevices.Size = new System.Drawing.Size(163, 21);
             this.cbxDevices.TabIndex = 1;
             // 
             // Label1
             // 
-            this.Label1.Location = new System.Drawing.Point(21, 27);
-            this.Label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label1.Location = new System.Drawing.Point(16, 22);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(59, 20);
+            this.Label1.Size = new System.Drawing.Size(44, 16);
             this.Label1.TabIndex = 0;
             this.Label1.Text = "&Device:";
             // 
             // Label7
             // 
-            this.Label7.Location = new System.Drawing.Point(29, 9);
-            this.Label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Label7.Location = new System.Drawing.Point(22, 7);
             this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(704, 34);
+            this.Label7.Size = new System.Drawing.Size(528, 28);
             this.Label7.TabIndex = 7;
             this.Label7.Text = "This demo requires a GSM modem or GSM phone connected to your computer. A SIM car" +
     "d is required in this GSM modem. For a list of recommended GSM modems,";
@@ -446,20 +407,18 @@
             this.GroupBox2.Controls.Add(this.txtToAddress);
             this.GroupBox2.Controls.Add(this.txtBody);
             this.GroupBox2.Controls.Add(this.btnSend);
-            this.GroupBox2.Location = new System.Drawing.Point(25, 148);
-            this.GroupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.GroupBox2.Location = new System.Drawing.Point(19, 120);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.GroupBox2.Size = new System.Drawing.Size(779, 203);
+            this.GroupBox2.Size = new System.Drawing.Size(584, 165);
             this.GroupBox2.TabIndex = 10;
             this.GroupBox2.TabStop = false;
             this.GroupBox2.Text = "Send Message";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(965, 883);
+            this.ClientSize = new System.Drawing.Size(724, 717);
             this.Controls.Add(this.ctlListGsmModems);
             this.Controls.Add(this.GroupBox5);
             this.Controls.Add(this.lblInfo);
@@ -467,8 +426,10 @@
             this.Controls.Add(this.GroupBox1);
             this.Controls.Add(this.Label7);
             this.Controls.Add(this.GroupBox2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.GroupBox5.ResumeLayout(false);
             this.GroupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
