@@ -10,8 +10,7 @@ using MembersBO;
 using System.IO.Ports;
 using System.Threading;
 using System.Configuration;
-using AxSms;
-
+using TimeKeepingApp.Config;
 namespace TimeKeepingApp
 {
     public partial class Form1 : Form
@@ -19,6 +18,10 @@ namespace TimeKeepingApp
         MemberInfoBO mem = new MemberInfoBO();
         TimekeepingBO tm = new TimekeepingBO();
         SMSBO smb = new SMSBO();
+        SerialPort port = new SerialPort();
+        clsSMS objclsSMS = new clsSMS();
+        ShortMessageCollection objShortMessageCollection = new ShortMessageCollection();
+
         Config.FrequencyClass fr = new Config.FrequencyClass();
 
         private AxSms.Gsm objGsm;
@@ -79,11 +82,11 @@ namespace TimeKeepingApp
             string mssg = "";
             if (status == "In")
             {
-                mssg = "You child has Entered to school premises at " + dateentry +" - St. Blase";
+                mssg = "You child has Entered to school premises at " + dateentry +" - St. Blaise";
             }
             else
             {
-                mssg = "You child has Left the school premises at " + dateentry + " - St. Blase";
+                mssg = "You child has Left the school premises at " + dateentry + " - St. Blaise";
             }
             return mssg;
         }
@@ -109,43 +112,28 @@ namespace TimeKeepingApp
         {
             try {
                 string conRate = ConfigurationManager.AppSettings["cFrequency"];
-                int brate = fr.BaudRate(conRate);
-
-                Cursor.Current = Cursors.WaitCursor;
-                int subsno = objConstants.TON_NATIONAL;
                 string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
-                string comm = "COM3";
-                objGsm.Open(COMMPORT.ToString(), "",  brate);
-             
-                // Create a new SMS message and configure it for sending.
-                AxSms.Message objSms = new AxSms.Message();
-                objSms.ToAddress = nos;
-                objSms.DataCoding = (int)objSmsConstants.DATACODING_DEFAULT;
-                objSms.Body = message;
+                int Databits = Convert.ToInt16(ConfigurationManager.AppSettings["cDataBits"]);
+                int TimeoutRate = Convert.ToInt16(ConfigurationManager.AppSettings["cTimeoutRate"]);
+                int TimeoutWrite = Convert.ToInt16(ConfigurationManager.AppSettings["cWriteTimout"]);
 
-                // Set the SMS properties from the advanced dialog            
-                objSms.BodyFormat = objConstants.BODYFORMAT_TEXT;
-
-                objSms.ToAddressTON = 0;
-                objSms.ToAddressNPI = 0;
-                objSms.RequestDeliveryReport = false;
-                objSms.HasUdh = false;
-
-                String strReference = objGsm.SendSms(objSms, objSmsConstants.MULTIPART_ACCEPT, 0);
-                ListViewItem item = new ListViewItem(new String[]
+                int brate = fr.BaudRate(conRate);
+                this.port = objclsSMS.OpenPort(COMMPORT, Convert.ToInt32(brate), Databits, TimeoutRate, TimeoutWrite);
+                if (this.port != null)
                 {
-                    "n/a", strReference, objSms.ToAddress, "SENT", objSms.Body
-                });
+                    objclsSMS.sendMsg(this.port,nos, message);
+                }
+                else
+                {
 
-                item.Tag = strReference;
-                objGsm.Close();
+                }
+                objclsSMS.ClosePort(this.port);
             }
             catch (Exception ex)
             {
                 return;
             }
-       }
-
+        }
         private void timer2_Tick(object sender, EventArgs e)
         {
             SenMessages();
