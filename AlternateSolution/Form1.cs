@@ -32,6 +32,7 @@ namespace AlternateSolution
                 MessageBox.Show("Cannot Connect");
             }
             objclsSMS.ClosePort(this.port);
+            this.port.Close();
         }
       
     }

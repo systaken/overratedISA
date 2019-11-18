@@ -128,6 +128,7 @@ namespace TimeKeepingApp
 
                 }
                 objclsSMS.ClosePort(this.port);
+                this.port.Close();
             }
             catch (Exception ex)
             {
