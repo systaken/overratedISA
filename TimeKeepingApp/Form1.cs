@@ -21,18 +21,29 @@ namespace TimeKeepingApp
         SerialPort port = new SerialPort();
         clsSMS objclsSMS = new clsSMS();
         ShortMessageCollection objShortMessageCollection = new ShortMessageCollection();
-
         Config.FrequencyClass fr = new Config.FrequencyClass();
 
         private AxSms.Gsm objGsm;
         private AxSms.Constants objSmsConstants;
         private AxSms.Constants objConstants;
+
+
+
         public Form1()
         {
             InitializeComponent();
             objGsm = new AxSms.Gsm();
             objSmsConstants = new AxSms.Constants();
             objConstants = new AxSms.Constants();
+
+            string conRate = ConfigurationManager.AppSettings["cFrequency"];
+            string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
+            int Databits = Convert.ToInt16(ConfigurationManager.AppSettings["cDataBits"]);
+            int TimeoutRate = Convert.ToInt16(ConfigurationManager.AppSettings["cTimeoutRate"]);
+            int TimeoutWrite = Convert.ToInt16(ConfigurationManager.AppSettings["cWriteTimout"]);
+            int brate = fr.BaudRate(conRate);
+            objclsSMS.ClosePort(this.port);
+            this.port = objclsSMS.OpenPort(COMMPORT, Convert.ToInt32(brate), Databits, TimeoutRate, TimeoutWrite);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -111,14 +122,6 @@ namespace TimeKeepingApp
         private void sendingtext(string message, string nos)
         {
             try {
-                string conRate = ConfigurationManager.AppSettings["cFrequency"];
-                string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
-                int Databits = Convert.ToInt16(ConfigurationManager.AppSettings["cDataBits"]);
-                int TimeoutRate = Convert.ToInt16(ConfigurationManager.AppSettings["cTimeoutRate"]);
-                int TimeoutWrite = Convert.ToInt16(ConfigurationManager.AppSettings["cWriteTimout"]);
-
-                int brate = fr.BaudRate(conRate);
-                this.port = objclsSMS.OpenPort(COMMPORT, Convert.ToInt32(brate), Databits, TimeoutRate, TimeoutWrite);
                 if (this.port != null)
                 {
                     objclsSMS.sendMsg(this.port,nos, message);
@@ -127,7 +130,7 @@ namespace TimeKeepingApp
                 {
 
                 }
-                objclsSMS.ClosePort(this.port);
+
             }
             catch (Exception ex)
             {

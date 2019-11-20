@@ -37,7 +37,7 @@ namespace TimeKeepingApp.Config
             }
             catch (Exception ex)
             {
-                throw ex;
+                port.Close();
             }
             return port;
         }
