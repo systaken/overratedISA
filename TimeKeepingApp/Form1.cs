@@ -131,6 +131,7 @@ namespace TimeKeepingApp
 
                 }
 
+                this.port.Close();
             }
             catch (Exception ex)
             {
