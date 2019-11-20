@@ -27,6 +27,8 @@ namespace TimeKeepingApp
         private AxSms.Constants objSmsConstants;
         private AxSms.Constants objConstants;
 
+
+
         public Form1()
         {
             InitializeComponent();
@@ -128,8 +130,12 @@ namespace TimeKeepingApp
                 {
 
                 }
+<<<<<<< HEAD
 
+=======
+                objclsSMS.ClosePort(this.port);
                 this.port.Close();
+>>>>>>> dd773bbd8c2c6bc73bc6f1213fe69e1065520d22
             }
             catch (Exception ex)
             {
