@@ -18,8 +18,6 @@ namespace MembersBO
             ssql = "SELECT  * FROM student_time where isActive = 1 ORDER BY LastName ASC";
             return rs.CreateDataTableFromQry(ssql);
         }
-
-
         public DataTable SelectBysearch(string searchby, string searchitem)
         {
             string ssql;
@@ -46,7 +44,7 @@ namespace MembersBO
                 string timeStats = string.Empty;
                 DataTable dt = new DataTable();
                 //GET THE LAST RECORD
-                string sqlselExists = "SELECT TOP 1 * FROM trn_timekeeping WHERE cardNo = '" + cardno +"' ORDER BY record_id DESC";
+                string sqlselExists = "SELECT TOP 1 * FROM trn_timekeeping WHERE cardNo = '" + cardno + "' AND studentId = '"+ memberId + "' ORDER BY record_id DESC";
                 dt = rs.CreateDataTableFromQry(sqlselExists);
                 if(dt.Rows.Count == 0)
                 {
@@ -59,18 +57,11 @@ namespace MembersBO
                         timeStats = "Out";
 
                     }
-                    else if (drow["TimeStatus"].ToString() == "")
-                    {
-                        timeStats = "In";
-
-                    }
-
                     else
                     {
                         timeStats = "In";
                     }
                 }
-                
                 ssql = "INSERT INTO trn_timekeeping(studentId, cardNo, TimePunch, TimeStatus)"
                      + " VALUES('"+ memberId +"','"+ cardno +"','"+ timepunch +"','"+ timeStats +"')";
                 rs.ExecuteSQL(ssql);

@@ -13,6 +13,7 @@ using ASPFramework;
 using ASPFSols;
 using System.IO;
 using System.Configuration;
+using MembersBO.Helpers;
 namespace ISAManagement.Info
 {
     public partial class StudentProfileFrm : Form
@@ -20,6 +21,7 @@ namespace ISAManagement.Info
         MemberInfoBO mem = new MemberInfoBO();
         regionBO regon = new regionBO();
         sectionBO sec = new sectionBO();
+        ImageHelper imgH = new ImageHelper();
         public StudentProfileFrm()
         {
             InitializeComponent();
@@ -113,7 +115,6 @@ namespace ISAManagement.Info
         }
         private bool saveRecord()
         {
-            
             int stopReg = Convert.ToInt16(ConfigurationManager.AppSettings["cStuds"]);
             bool rtval = false;
             try
@@ -124,7 +125,7 @@ namespace ISAManagement.Info
                     {
                         if (mem.Register(txtstudentNos.Text, txtrfid.Text, txtfname.Text, txtlname.Text, txtmid.Text, ddLevel.Text, ddsection.SelectedValue.ToString(), txtguardian.Text,
                             dtBdate.Value.ToShortDateString(), txtadd1.Text, txtadd2.Text, txtadd3.Text, txttel.Text, txtfax.Text, txtemail.Text,
-                            "", DateTime.Now.ToShortDateString(), cmbGender.Text, "") == true)
+                            "", DateTime.Now.ToShortDateString(), cmbGender.Text, txtencrypt.Text) == true)
                         {
                             rtval = true;
                         }
@@ -144,7 +145,7 @@ namespace ISAManagement.Info
                 {
                     if (mem.UpdateMember(txtstudentNos.Text, txtrfid.Text, txtfname.Text, txtlname.Text, txtmid.Text, ddLevel.Text, ddsection.SelectedValue.ToString(), txtguardian.Text,
                         dtBdate.Value.ToShortDateString(), txtadd1.Text, txtadd2.Text, txtadd3.Text, txttel.Text, txtfax.Text, txtemail.Text,
-                        "", DateTime.Now.ToShortDateString(), cmbGender.Text, lblrecid.Text) == true)
+                        "", DateTime.Now.ToShortDateString(), cmbGender.Text, lblrecid.Text,txtencrypt.Text) == true)
                     {
                         rtval = true;
                     }
@@ -220,6 +221,12 @@ namespace ISAManagement.Info
                 txtrfid.Text = drow["card_no"].ToString();
                 txtstudentNos.Text = drow["student_no"].ToString();
 
+                if (drow["PixUrl"].ToString() != "")
+                {
+                    txtencrypt.Text = drow["PixUrl"].ToString();
+                    pictureBox1.Image = imgH.ConvertBase64ToImage(txtencrypt.Text);
+                }
+
                 lblmemid.Text = "Update";
             }
         }
@@ -227,6 +234,30 @@ namespace ISAManagement.Info
         private void button2_Click(object sender, EventArgs e)
         {
             clear();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.InitialDirectory = "C:\\";
+            //openFileDialog1.Filter = "(*.jpg)|*.jpg | png (*.png*)|*.png";
+            openFileDialog1.FilterIndex = 2;
+            openFileDialog1.RestoreDirectory = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    textResponse.Text = openFileDialog1.FileName;
+                    //pictureBox1.ImageLocation = textResponse.Text;
+                    Bitmap im = new Bitmap(textResponse.Text);
+                    txtencrypt.Text = imgH.ConvertImageToBase64(im);
+                    pictureBox1.Image = imgH.ConvertBase64ToImage(txtencrypt.Text);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Security error.\n\nError message: {ex.ToString()}\n\n" +
+                    $"Details:\n\n{ex.StackTrace}");
+                }
+            }
         }
     }
 }

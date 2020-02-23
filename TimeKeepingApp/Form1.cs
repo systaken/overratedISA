@@ -11,6 +11,9 @@ using System.IO.Ports;
 using System.Threading;
 using System.Configuration;
 using TimeKeepingApp.Config;
+using MembersBO.Helpers;
+using System.Media;
+
 namespace TimeKeepingApp
 {
     public partial class Form1 : Form
@@ -22,7 +25,7 @@ namespace TimeKeepingApp
         clsSMS objclsSMS = new clsSMS();
         ShortMessageCollection objShortMessageCollection = new ShortMessageCollection();
         Config.FrequencyClass fr = new Config.FrequencyClass();
-
+        ImageHelper imgH = new ImageHelper();
         private AxSms.Gsm objGsm;
         private AxSms.Constants objSmsConstants;
         private AxSms.Constants objConstants;
@@ -48,6 +51,7 @@ namespace TimeKeepingApp
         {
             lbldate.Text = DateTime.Now.ToShortDateString();
             string COMMPORT = ConfigurationManager.AppSettings["COMMPORT"];
+            this.WindowState = FormWindowState.Maximized;
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -55,17 +59,24 @@ namespace TimeKeepingApp
         }
         private void loadinformation()
         {
+           
             DataTable dt = new DataTable();
             dt = mem.StudentCard(txtcardno.Text);
             foreach (DataRow drow in dt.Rows)
             {
+                playSound();
                 lblcardno.Text = txtcardno.Text;
                 lblstudentname.Text = drow["LastName"] + "," + drow["FirstName"] + " " + drow["MiddleInitial"];
                 lblGlevel.Text = drow["GLevel"].ToString();
                 tm.TimeEntry(txtcardno.Text, drow["member_id"].ToString(), DateTime.Now.ToString());
                 string ensms = SMSMEssager(tm._lstat, DateTime.Now.ToString());
                 string contact = drow["TelNo"].ToString();
-                if(contact != "")
+                string pix = drow["PixUrl"].ToString();
+                if (pix != "")
+                {
+                    pictureBox2.Image = imgH.ConvertBase64ToImage(pix);
+                }
+                if (contact != "")
                 {
                     smb.Insert(contact,ensms);
                 }
@@ -85,60 +96,48 @@ namespace TimeKeepingApp
                 txtcardno.Text = "";
             }
         }
-
         private string SMSMEssager(string status, string dateentry)
         {
             string mssg = "";
             if (status == "In")
             {
-                mssg = "You child has Entered to school premises at " + dateentry +" - St. Blaise";
+                mssg = "You child has Entered to school premises at " + dateentry +" - ISA";
             }
             else
             {
-                mssg = "You child has Left the school premises at " + dateentry + " - St. Blaise";
+                mssg = "You child has Left the school premises at " + dateentry + " - ISA";
             }
             return mssg;
         }
 
-        private void SenMessages()
+        private void playSound()
         {
-            DataTable dt = new DataTable();
-            dt = smb.Unsent();
-            if (dt.Rows.Count > 0)
+
+            string cMorning = ConfigurationManager.AppSettings["cGoodMorning"];
+            string cAfternoon = ConfigurationManager.AppSettings["cGoodAfternoon"];
+            string cEvening = ConfigurationManager.AppSettings["cGoodEvening"];
+
+            if (DateTime.Now.Hour <= 12)
             {
-                foreach (DataRow dr in dt.Rows)
+                using (var soundPlayer = new SoundPlayer(cMorning))
                 {
-                    string cons = dr["Sentto"].ToString();
-                    string msgs = dr["Message"].ToString();
-                    int ids =  Convert.ToInt16(dr["sms_id"]);
-                    sendingtext(msgs, cons);
-                    smb.MarkAsSent(ids);
+                    soundPlayer.Play();
                 }
             }
-        }
-
-        private void sendingtext(string message, string nos)
-        {
-            try {
-                if (this.port != null)
-                {
-                    objclsSMS.sendMsg(this.port,nos, message);
-                }
-                else
-                {
-
-                }
-
-                this.port.Close();
-            }
-            catch (Exception ex)
+            else if (DateTime.Now.Hour <= 16)
             {
-                return;
+                using (var soundPlayer = new SoundPlayer(cAfternoon))
+                {
+                    soundPlayer.Play();
+                }
             }
-        }
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            SenMessages();
+            else if (DateTime.Now.Hour <= 20)
+            {
+                using (var soundPlayer = new SoundPlayer(cEvening))
+                {
+                    soundPlayer.Play();
+                }
+            }
         }
     }
 }

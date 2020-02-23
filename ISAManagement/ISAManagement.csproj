@@ -65,10 +65,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ASPFramework">
-      <HintPath>..\Library\ASPFramework.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFramework.dll</HintPath>
     </Reference>
     <Reference Include="ASPFSols">
-      <HintPath>..\Library\ASPFSols.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFSols.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />

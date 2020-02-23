@@ -62,10 +62,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ASPFramework">
-      <HintPath>..\Library\ASPFramework.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFramework.dll</HintPath>
     </Reference>
     <Reference Include="ASPFSols">
-      <HintPath>..\Library\ASPFSols.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFSols.dll</HintPath>
     </Reference>
     <Reference Include="Interop.AxSms">
       <HintPath>..\Library\Interop.AxSms.dll</HintPath>
@@ -108,7 +108,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="dbcon.ini">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -135,6 +137,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\IDDefault.PNG" />
+    <Content Include="Sounds\goodafternoon.wav" />
+    <Content Include="Sounds\goodevening.wav" />
+    <Content Include="Sounds\goodmorning.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

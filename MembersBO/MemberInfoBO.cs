@@ -50,7 +50,7 @@ namespace MembersBO
                 ssql = "UPDATE ref_members SET FirstName = '" + fname + "', LastName = '" + lname + "', MiddleInitial = '" + mname + "' , GLevel = '" + GLevel + "',"
                        + " section_id = '" + section_id + "',GuardianName = '" + GuardianName + "',"
                        + " Bdate = '" + bdate + "',Addr1 = '" + addr1 + "',Addr2 = '" + addr2 + "',Addr3 = '" + addr3 + "', TelNo = '" + telno + "', Faxno = '" + faxno + "',"
-                       + " EmailAdd = '" + emailadd + "', student_no = '" + student_no + "', card_no = '"+ cardno +"' WHERE member_id = '" + recordid + "'";
+                       + " EmailAdd = '" + emailadd + "', student_no = '" + student_no + "', card_no = '"+ cardno + "' , PixUrl = '"+ pixUrl +"' WHERE member_id = '" + recordid + "'";
 
                 rs.ExecuteSQL(ssql);
                 rtval = true;

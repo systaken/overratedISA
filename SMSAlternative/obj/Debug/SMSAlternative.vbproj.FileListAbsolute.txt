@@ -10,3 +10,15 @@ E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlte
 E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.exe
 E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.xml
 E:\Jonathan Personal File\Programm\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.exe.config
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\bin\Debug\SMSAlternative.xml
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbprojAssemblyReference.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.Form1.resources
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.Resources.resources
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbproj.GenerateResource.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.vbproj.CoreCompileInputs.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.xml
+D:\Programs\StudentRFID\windowsApp\overratedISA\SMSAlternative\obj\Debug\SMSAlternative.pdb

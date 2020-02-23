@@ -1,0 +1,15 @@
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\dbcon.ini
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\ISAJobs.exe.config
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\ISAJobs.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\ISAJobs.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\MembersBO.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\ASPFramework.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\ASPFSols.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Release\MembersBO.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.csprojAssemblyReference.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.csproj.CoreCompileInputs.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.csproj.CopyComplete
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.SMSForm.resources
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Release\ISAJobs.csproj.GenerateResource.cache

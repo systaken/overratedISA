@@ -1,0 +1,13 @@
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\dbcon.ini
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\ISAJobs.exe.config
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\ISAJobs.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\ISAJobs.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\MembersBO.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\ASPFramework.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\ASPFSols.dll
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\bin\Debug\MembersBO.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Debug\ISAJobs.csprojAssemblyReference.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Debug\ISAJobs.csproj.CoreCompileInputs.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Debug\ISAJobs.csproj.CopyComplete
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Debug\ISAJobs.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\ISAJobs\obj\Debug\ISAJobs.pdb

@@ -5,8 +5,6 @@ using System.Text;
 using System.Data;
 using ASPFSols;
 
-
-
 namespace MembersBO
 {
     public class SMSBO : GlobalVar
@@ -53,6 +51,26 @@ namespace MembersBO
             {
                 ssql = "INSERT INTO trn_sms(Sentto,Message)"
                      + " VALUES('" + Sentto + "','" + Msgs + "')";
+                rs.ExecuteSQL(ssql);
+                rtval = true;
+            }
+            catch (Exception ex)
+            {
+                _err = ex.ToString();
+                rtval = false;
+            }
+            return rtval;
+        }
+
+        public bool InsertErrors(string errors,string Sentto, string Msgs)
+        {
+            connectionDB();
+            bool rtval = true;
+            string ssql = "";
+            try
+            {
+                ssql = "INSERT INTO trn_smsLogin(SMSErrorLogs,sentto,sentmssgs)"
+                     + " VALUES('" + errors + "','" + Sentto + "','" + Msgs + "')";
                 rs.ExecuteSQL(ssql);
                 rtval = true;
             }

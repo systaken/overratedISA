@@ -7,3 +7,12 @@ G:\Development\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\A
 G:\Development\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.csproj.CoreCompileInputs.cache
 G:\Development\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.exe
 G:\Development\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\bin\Debug\AlternateSolution.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\bin\Debug\AlternateSolution.pdb
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.csprojAssemblyReference.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.Form1.resources
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.Properties.Resources.resources
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.csproj.GenerateResource.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.csproj.CoreCompileInputs.cache
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.exe
+D:\Programs\StudentRFID\windowsApp\overratedISA\AlternateSolution\obj\Debug\AlternateSolution.pdb

@@ -32,13 +32,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ASPFramework">
-      <HintPath>..\Library\ASPFramework.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFramework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ASPFSols">
-      <HintPath>..\Library\ASPFSols.dll</HintPath>
+      <HintPath>..\..\..\Lib\ASPFSols.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CardInfoBO.cs" />
     <Compile Include="GlobalVar.cs" />
+    <Compile Include="Helpers\ImageHelper.cs" />
     <Compile Include="MemberInfoBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="regionBO.cs" />
